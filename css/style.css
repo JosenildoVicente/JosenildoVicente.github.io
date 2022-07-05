@@ -1,0 +1,50 @@
+:root{
+    --bg-home: #FFF;
+    --bg-nav: #FF0;
+    --bg-hover: #F0F;
+    --text-color-1: #000;
+    --text-color-2: #1e90ff;
+}
+
+body{
+    background-color: var(--bg-home);
+    margin: 0;
+}
+
+#menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-nav);
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+#a-nav-initial{
+
+}
+
+#ul-nav-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.li-menu{
+    padding: 0 5px;
+    /* display: inline-block; */
+}
+
+.li-menu a{
+    color: var(--text-color-1);
+    margin-right: 25px;
+    text-decoration: none;
+}
+
+.li-menu:hover, #a-nav-initial:hover, .li-menu a:hover{
+    color: var(--bg-nav);
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: var(--bg-hover);
+}
