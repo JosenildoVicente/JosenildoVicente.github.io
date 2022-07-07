@@ -1,16 +1,21 @@
-const projs = document.getElementById("projects-list");
-const proj = document.querySelectorAll("#projects-list div");
+const btn = document.getElementById('button-projects');
+const block = document.getElementById("block-2");
+const proj = document.getElementById("projects");
+const list = document.getElementById("projects-list");
 
-let idx = 0;
+btn.addEventListener('click', function handleClick() {
+    const initialText = 'Ver mais';
 
-function carrossel(){
-    idx++;
+    if (btn.textContent.toLowerCase().includes(initialText.toLowerCase())) {
+        btn.textContent = 'Ver menos';
+        block.style.visibility = 'visible';
+        proj.style.height = '1000px';
+        list.style.height = '800px';
 
-    if(idx > proj.length -1){
-        idx=0;
+    } else {
+        btn.textContent = initialText;
+        block.style.visibility = 'hidden';
+        proj.style.height = '600px';
+        list.style.height = '400px';
     }
-
-    projs.style.transform = `translateX(${-idx * 500}px)`;
-}
-
-// setInterval(carrossel,1800);
+});

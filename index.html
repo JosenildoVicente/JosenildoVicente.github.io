@@ -108,7 +108,7 @@
             <div class="div-content-projects">
                 <h1>Projetos</h1>
                 <div class="div-projects-list" id="projects-list">
-                    <div class="carrossel">
+                    <div class="div-projects-block-1">
                         <div class="div-project" id="project-1">
                             <div class="div-img">
                                 <img src="assets/img/profile.jpg" alt="">
@@ -133,6 +133,8 @@
                             <h2>mini descricao</h2>
                             <h3>tags: </h3>
                         </div>
+                    </div>
+                    <div class="div-projects-block-2" id="block-2">
                         <div class="div-project" id="project-4">
                             <div class="div-img">
                                 <img src="assets/img/profile.jpg" alt="">
@@ -164,28 +166,23 @@
                 </div>
             </div>
         </section>
+        
         <hr class="separator-bar" />
         <!-- Skills -->
         <section class="sections-page" id="skills">
             <div class="div-content-skills">
-                <h3>Conhecimentos</h3>
-                <ul id="ul-skills-list">
-                    <li id="skill-1">
-                        <div class="div-kills" id="kill-1">
-                            <p>nome do conhecimento 1</p>
-                        </div>
-                    </li>
-                    <li id="skill-2">
-                        <div class="div-kills" id="kill-2">
-                            <p>nome do conhecimento 2</p>
-                        </div>
-                    </li>
-                    <li id="skill-3">
-                        <div class="div-kills" id="kill-3">
-                            <p>nome do conhecimento 3</p>
-                        </div>
-                    </li>
-                </ul>
+                <h1>Conhecimentos</h1>
+                <div class="skills-list">
+                    <div class="div-skills" id="kill-1">
+                        <h2>HTML</h2>
+                    </div>
+                    <div class="div-skills" id="kill-2">
+                        <h2>CSS</h2>
+                    </div>
+                    <div class="div-skills" id="kill-3">
+                        <h2>JS</h2>
+                    </div>
+                </div>
                 
 
             </div>
@@ -201,10 +198,27 @@
         <!-- Contact -->
         <section class="sections-page" id="contact">
             <div class="div-content-contact">
-                <h3>Contato</h3>
-                <p>email</p>
-                <button type="button" id="button-linkedin">Linkedin</button>
-                <button type="button" id="button-github">Github</button>
+                <div class="div-contact-block-buttons">
+                    <h1>Contato<span>:</span></h1>
+                    <div>
+                        <button type="button" id="button-linkedin">Linkedin</button>
+                        <button type="button" id="button-github">Github</button>    
+                    </div>
+                    
+                </div>
+                <div class="div-contact-block-email">
+                    <form action="https://formsubmit.co/jva@cin.ufpe.br" method="POST" class="mail-form">
+                        <div class="div-form-inputs">
+                            <input type="text" name="name" placeholder="Nome" required id="form-name" class="form-inputs">
+                            <input type="email" name="email" placeholder="E-mail" required id="form-email" class="form-inputs">
+                            <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Escreva sua mensagem" class="form-inputs" required></textarea>
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/#">
+
+                            <button type="submit" class="form-inputs" id="form-button">Send</button>
+                        </div>
+                   </form>
+                </div>
                 
             </div>
         </section>
