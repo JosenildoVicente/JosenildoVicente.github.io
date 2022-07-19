@@ -152,7 +152,7 @@ section.sections-page{
 .sections-page div{
     justify-content: center;
     text-align: left;
-    /* border: solid 1px var(--color-2); borda temporária */
+    border: solid 1px var(--color-2); /*borda temporária*/
 }
 
 /* Initial section */
@@ -394,37 +394,35 @@ section.sections-page{
 }
 
 .div-projects-list{
-    margin-top: 10px;
-    margin-left: 10%;
-    display:block;
+    margin-left: 5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 60px;
+    display:flex;
+    flex-direction: column;
+
     justify-content:center;
     align-items:center;
-    /* overflow-x: hidden;  */
-    
-    width: 80%;
-    height: 400px; /* 400px or 800px */
-    /* transition: 0.3s; */
+
+    width: 90%;
+    height:auto;
 
 }
 
 .div-projects-block-1{
-    margin-left: 5%;
-    margin-top: 25px;
     display: flex;
-    align-items: center;
-    width: 90%;
-    height: 350px;
-    visibility: visible;
-
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    width: 100%;
 }
+
 .div-projects-block-2{
-    margin-left: 5%;
-    margin-top: 25px;
-    display: flex;
-    align-items: center;
-    width: 90%;
-    height: 350px;
-    visibility: hidden;
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    width: 100%;
 }
 
 .div-project{
@@ -441,10 +439,6 @@ section.sections-page{
     border: solid 1px var(--color-2);
 
 }
-
-/* #project-4 #project-5 #project-6{
-
-} */
 
 .div-project .div-img{
     width: 200px;
@@ -535,7 +529,7 @@ section.sections-page{
     margin-right: 10%;
 } */
 .div-content-skills{
-    height: 300px;
+    /* height: 300px; */
     margin-left: 10%;
     width: 80%;
 }
@@ -549,24 +543,25 @@ section.sections-page{
 }
 
 .skills-list{
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
     
 }
 
 .div-skills{
-    height: 25px;
+    height: 35px;
     display: block;
-    margin-left: 5%;
-    margin-right: 5%;
     padding: 5px;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
-    background-color: var(--color-2);
-    border: solid 2px var(--color-2);
+    border: solid 2px var(--color-3);
     border-radius: 15px;
+    background-color: var(--color-2);
     color: var(--color-1);
-    cursor: pointer;
+    cursor:default;
     opacity: 0.9;
     transition-duration: 0.5s;
 
@@ -574,7 +569,7 @@ section.sections-page{
 
 .div-skills:hover{
     border: solid 2px var(--color-2);
-    border-radius: 15px;
+    /* border-radius: 15px; */
     background: rgba(3, 20, 36, 0.2);
     color: var(--color-2);
     font-weight: bold;
@@ -621,8 +616,11 @@ section.sections-page{
     margin: center;
 }
 .div-contact-block-buttons div{
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .div-contact-block-buttons button{
     height: 50px;
@@ -777,6 +775,6 @@ section.sections-page{
     }
 }
 
-/* @media screen and (max-width: ){
-
-} */
+@media screen and (max-width: 800px){
+    
+}
