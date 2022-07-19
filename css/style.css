@@ -25,8 +25,8 @@ p{
 
 }
 
-body{
-}
+/* body{
+} */
 
 hr {
     /* margin: 0;
@@ -109,32 +109,6 @@ main{
     opacity: 1;
 }
 
-@media (max-width: 999px) {
-    body{
-        overflow-x: hidden; 
-    }
-    .nav-list{
-        position: absolute;
-        right: 0;
-        width: 50vw;
-        height: 92vh;
-        top: 8vh;
-        background: var(--bg-nav);
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-    }
-    .li-menu{
-        margin-left: 0;
-        opacity: 0;
-    }
-    .mobile-menu{
-        display: block;
-    }
-}
-
 .nav-list.active{
     transform: translateX(0);
 }
@@ -160,8 +134,8 @@ main{
     transform: rotate(45deg) translate(-5px, -7px);
 }
 
-.li-menu a{
-}
+/* .li-menu a{
+} */
 
 /* Main page */
 
@@ -224,7 +198,8 @@ section.sections-page{
 }
 
 .div-content-initial button{
-    width: 15%;
+    width: 120px;
+    height: 50px;
     margin-top: 30px;
     padding: 8px 5px;
     font-size: 20px;
@@ -252,7 +227,8 @@ section.sections-page{
 /* About Section */
 
 #about{
-    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #about div{
@@ -271,8 +247,8 @@ section.sections-page{
 }
 
 .div-content-about p{
-    margin-top: 10%;
-    padding-left: 20%;
+    margin-top: 20px;
+    padding-left: 50px;
     font-size: 20px;
     color: var(--color-2);
     /* font-family: ; */
@@ -283,7 +259,8 @@ section.sections-page{
 /* Education Section */
 
 #education{
-    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #education div{
@@ -339,7 +316,8 @@ section.sections-page{
 /* Academic Experience Section */
 
 #academicExperience{
-    height: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #academicExperience div{
@@ -393,7 +371,9 @@ section.sections-page{
 /* Projects */
 
 #projects{
-    height: 600px; /* 600px or 1000px */
+    /* height: 600px; 600px or 1000px */
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: 10%;
     width: 80%;
     /* transition: 1s; */
@@ -462,9 +442,9 @@ section.sections-page{
 
 }
 
-#project-4 #project-5 #project-6{
+/* #project-4 #project-5 #project-6{
 
-}
+} */
 
 .div-project .div-img{
     width: 200px;
@@ -517,7 +497,7 @@ section.sections-page{
 }
 
 #button-projects{
-    width: 15%;
+    width: 120px;
     height: 50px;
     display: block;
     margin-left: auto;
@@ -546,13 +526,14 @@ section.sections-page{
 /* Skills */
 
 #skills{
-    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-#skills div{
-    /* margin-left: 10%;
-    margin-right: 10%; */
-}
+/* #skills div{
+    margin-left: 10%;
+    margin-right: 10%;
+} */
 .div-content-skills{
     height: 300px;
     margin-left: 10%;
@@ -605,7 +586,8 @@ section.sections-page{
 /* Contact */
 
 #contact{
-    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .div-content-contact{
@@ -685,6 +667,7 @@ section.sections-page{
 
 #form-name{
     width: 100%;
+    min-width: 120px;
     height: 30px;
     margin-top: 0px;
     background-color: var(--bg-hover);
@@ -705,6 +688,7 @@ section.sections-page{
 
 #form-email{
     width: 100%;
+    min-width: 120px;
     height: 30px;
     margin-top: 20px;
     background-color: var(--bg-hover);
@@ -724,6 +708,7 @@ section.sections-page{
 
 #form-message{
     width: 100%;
+    min-width: 120px;
     height: 150px;
     margin-top: 20px;
     background-color: var(--bg-hover);
@@ -743,6 +728,7 @@ section.sections-page{
 
 #form-button{
     height: 50px;
+    min-width: 120px;
     display: block;
     padding: 5px;
     font-size: 25px;
@@ -762,3 +748,35 @@ section.sections-page{
     opacity: 1;
     transition: 0.3s;
 }
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+    body{
+        overflow-x: hidden; 
+    }
+    .nav-list{
+        position: absolute;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        top: 8vh;
+        background: var(--bg-nav);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .li-menu{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+    }
+}
+
+/* @media screen and (max-width: ){
+
+} */
