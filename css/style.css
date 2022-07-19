@@ -152,7 +152,7 @@ section.sections-page{
 .sections-page div{
     justify-content: center;
     text-align: left;
-    border: solid 1px var(--color-2); /*borda temporária*/
+    /* border: solid 1px var(--color-2); borda temporária */
 }
 
 /* Initial section */
